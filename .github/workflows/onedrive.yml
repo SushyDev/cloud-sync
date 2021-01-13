@@ -9,4 +9,4 @@ jobs:
       env:
         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
       with:
-        args: move OneDrive:/ Main:OneDrive --progress
+        args: copy OneDrive:/ Main:OneDrive --progress

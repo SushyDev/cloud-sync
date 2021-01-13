@@ -9,4 +9,4 @@ jobs:
       env:
         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
       with:
-        args: copy Main:/ Backup:/ --progress
+        args: copy Main:/ Backup-1:/ --progress

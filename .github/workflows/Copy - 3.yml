@@ -11,4 +11,4 @@ jobs:
       env:
         RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
       with:
-        args: copy Main:/ B3/ --progress
+        args: copy Main:/ B3/

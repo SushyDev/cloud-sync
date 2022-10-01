@@ -12,7 +12,7 @@ jobs:
               env:
                   RCLONE_CONF: ${{ secrets.RCLONE }}
               with:
-                  args: sync drive_1:/ drive_2:/ --fast-list --tpslimit-burst=16 --ignore-errors --stats=30s --max-backlog=2000000 --ignore-case --size-only --no-update-modtime --drive-chunk-size=256M --drive-use-trash=false --drive-server-side-across-configs=true --drive-stop-on-upload-limit --drive-skip-gdocs --drive-acknowledge-abuse --timeout=10s --tpslimit=4
+                  args: sync drive_1:/ drive_2:/ --fast-list --tpslimit-burst=16 --ignore-errors --stats=30s --max-backlog=2000000 --ignore-case --size-only --no-update-modtime --drive-chunk-size=256M --drive-use-trash=false --drive-server-side-across-configs=true --drive-stop-on-upload-limit --drive-skip-gdocs --drive-acknowledge-abuse --timeout=10s --tpslimit=4 -q
                   
     drive_3:
         runs-on: ubuntu-latest
@@ -22,7 +22,7 @@ jobs:
               env:
                   RCLONE_CONF: ${{ secrets.RCLONE }}
               with:
-                  args: sync drive_1:/ drive_3:/ --fast-list --tpslimit-burst=16 --ignore-errors --stats=30s --max-backlog=2000000 --ignore-case --size-only --no-update-modtime --drive-chunk-size=256M --drive-use-trash=false --drive-server-side-across-configs=true --drive-stop-on-upload-limit --drive-skip-gdocs --drive-acknowledge-abuse --timeout=10s --tpslimit=4
+                  args: sync drive_1:/ drive_3:/ --fast-list --tpslimit-burst=16 --ignore-errors --stats=30s --max-backlog=2000000 --ignore-case --size-only --no-update-modtime --drive-chunk-size=256M --drive-use-trash=false --drive-server-side-across-configs=true --drive-stop-on-upload-limit --drive-skip-gdocs --drive-acknowledge-abuse --timeout=10s --tpslimit=4 -q
 
     onedrive:
         runs-on: ubuntu-latest
@@ -32,4 +32,4 @@ jobs:
               env:
                   RCLONE_CONF: ${{ secrets.RCLONE }}
               with:
-                  args: sync drive_1:/ onedrive:/ --fast-list --tpslimit-burst=16 --ignore-errors --stats=30s --max-backlog=2000000 --ignore-case --size-only --no-update-modtime --drive-chunk-size=256M --drive-use-trash=false --drive-server-side-across-configs=true --drive-stop-on-upload-limit --drive-skip-gdocs --drive-acknowledge-abuse --timeout=10s --tpslimit=4
+                  args: sync drive_1:/ onedrive:/ --fast-list --tpslimit-burst=16 --ignore-errors --stats=30s --max-backlog=2000000 --ignore-case --size-only --no-update-modtime --drive-chunk-size=256M --drive-use-trash=false --drive-server-side-across-configs=true --drive-stop-on-upload-limit --drive-skip-gdocs --drive-acknowledge-abuse --timeout=10s --tpslimit=4 -q

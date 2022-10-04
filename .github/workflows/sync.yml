@@ -24,6 +24,66 @@ jobs:
               with:
                   args: sync drive_1:/ drive_3:/ --fast-list --tpslimit-burst=16 --ignore-errors --stats=30s --max-backlog=2000000 --ignore-case --size-only --no-update-modtime --drive-chunk-size=256M --drive-use-trash=false --drive-server-side-across-configs=true --drive-stop-on-upload-limit --drive-skip-gdocs --drive-acknowledge-abuse --timeout=10s --tpslimit=4 -q
 
+    drive_4:
+        runs-on: ubuntu-latest
+        steps:
+            - name: rclone
+              uses: wei/rclone@v1
+              env:
+                  RCLONE_CONF: ${{ secrets.RCLONE }}
+              with:
+                  args: sync drive_1:/ drive_4:/ --fast-list --tpslimit-burst=16 --ignore-errors --stats=30s --max-backlog=2000000 --ignore-case --size-only --no-update-modtime --drive-chunk-size=256M --drive-use-trash=false --drive-server-side-across-configs=true --drive-stop-on-upload-limit --drive-skip-gdocs --drive-acknowledge-abuse --timeout=10s --tpslimit=4 -q
+
+    drive_5:
+        runs-on: ubuntu-latest
+        steps:
+            - name: rclone
+              uses: wei/rclone@v1
+              env:
+                  RCLONE_CONF: ${{ secrets.RCLONE }}
+              with:
+                  args: sync drive_1:/ drive_5:/ --fast-list --tpslimit-burst=16 --ignore-errors --stats=30s --max-backlog=2000000 --ignore-case --size-only --no-update-modtime --drive-chunk-size=256M --drive-use-trash=false --drive-server-side-across-configs=true --drive-stop-on-upload-limit --drive-skip-gdocs --drive-acknowledge-abuse --timeout=10s --tpslimit=4 -q
+
+    drive_6:
+        runs-on: ubuntu-latest
+        steps:
+            - name: rclone
+              uses: wei/rclone@v1
+              env:
+                  RCLONE_CONF: ${{ secrets.RCLONE }}
+              with:
+                  args: sync drive_1:/ drive_6:/ --fast-list --tpslimit-burst=16 --ignore-errors --stats=30s --max-backlog=2000000 --ignore-case --size-only --no-update-modtime --drive-chunk-size=256M --drive-use-trash=false --drive-server-side-across-configs=true --drive-stop-on-upload-limit --drive-skip-gdocs --drive-acknowledge-abuse --timeout=10s --tpslimit=4 -q
+
+    drive_7:
+        runs-on: ubuntu-latest
+        steps:
+            - name: rclone
+              uses: wei/rclone@v1
+              env:
+                  RCLONE_CONF: ${{ secrets.RCLONE }}
+              with:
+                  args: sync drive_1:/ drive_7:/ --fast-list --tpslimit-burst=16 --ignore-errors --stats=30s --max-backlog=2000000 --ignore-case --size-only --no-update-modtime --drive-chunk-size=256M --drive-use-trash=false --drive-server-side-across-configs=true --drive-stop-on-upload-limit --drive-skip-gdocs --drive-acknowledge-abuse --timeout=10s --tpslimit=4 -q
+
+    drive_8:
+        runs-on: ubuntu-latest
+        steps:
+            - name: rclone
+              uses: wei/rclone@v1
+              env:
+                  RCLONE_CONF: ${{ secrets.RCLONE }}
+              with:
+                  args: sync drive_1:/ drive_8:/ --fast-list --tpslimit-burst=16 --ignore-errors --stats=30s --max-backlog=2000000 --ignore-case --size-only --no-update-modtime --drive-chunk-size=256M --drive-use-trash=false --drive-server-side-across-configs=true --drive-stop-on-upload-limit --drive-skip-gdocs --drive-acknowledge-abuse --timeout=10s --tpslimit=4 -q
+
+    drive_9:
+        runs-on: ubuntu-latest
+        steps:
+            - name: rclone
+              uses: wei/rclone@v1
+              env:
+                  RCLONE_CONF: ${{ secrets.RCLONE }}
+              with:
+                  args: sync drive_1:/ drive_9:/ --fast-list --tpslimit-burst=16 --ignore-errors --stats=30s --max-backlog=2000000 --ignore-case --size-only --no-update-modtime --drive-chunk-size=256M --drive-use-trash=false --drive-server-side-across-configs=true --drive-stop-on-upload-limit --drive-skip-gdocs --drive-acknowledge-abuse --timeout=10s --tpslimit=4 -q
+
     onedrive:
         runs-on: ubuntu-latest
         steps:

@@ -21,7 +21,7 @@ jobs:
           name: 'Authenticate to Google Cloud'
           uses: 'google-github-actions/auth@v0'
           with:
-            credentials_json: ${{ secrets.RCLONE }}
+            credentials_json: ${{ secrets.CREDENTIALS }}
 
     drive_2:
         runs-on: ubuntu-latest
